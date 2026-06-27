@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="dark-theme">
-  <!-- Decorative Background Glows -->
+  <!-- Decorative Background Glows (Trust Blue and Teal, no AI purple/pink) -->
   <div class="glow-orb orb-1"></div>
   <div class="glow-orb orb-2"></div>
 
@@ -25,13 +25,21 @@
   <header class="site-header">
     <div class="header-container">
       <div class="logo-area">
-        <span class="logo-icon">🔒</span>
+        <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
         <span class="logo-text">くらべっ子 <span class="logo-subtext">Kurabekko</span></span>
       </div>
       
       <div class="controls-area">
         <!-- Language Selector Button -->
         <button id="lang-toggle" class="btn-control" aria-label="Switch Language">
+          <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+            <path d="M2 12h20"/>
+          </svg>
           <span class="lang-label label-active" id="lang-ja-btn">日本語</span>
           <span class="lang-divider">/</span>
           <span class="lang-label" id="lang-en-btn">EN</span>
@@ -39,12 +47,12 @@
         
         <!-- Theme Toggle Button -->
         <button id="theme-toggle" class="btn-control icon-btn" aria-label="Toggle Dark/Light Mode">
-          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" width="20" height="20">
-            <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
-            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
           </svg>
-          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" width="20" height="20">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
           </svg>
         </button>
       </div>
@@ -74,7 +82,12 @@
       <!-- Card 1: Photos -->
       <div class="card glass">
         <div class="card-header">
-          <div class="card-icon">📸</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+              <circle cx="12" cy="13" r="3"/>
+            </svg>
+          </div>
           <h2>1. 写真データの取り扱い</h2>
         </div>
         <div class="card-body">
@@ -82,21 +95,33 @@
           
           <ul class="features-list">
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>完全なオンデバイス処理</strong>
                 <p class="feature-desc">すべての写真のスキャン、インデックス作成、比較処理は、利用者の端末（iPhone / iPad）内だけで完結します。</p>
               </div>
             </li>
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>外部送信の禁止</strong>
                 <p class="feature-desc">写真データやメタデータが外部のサーバーにアップロードされたり、開発者を含む第三者に送信されたりすることはありません。</p>
               </div>
             </li>
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>利用者による共有</strong>
                 <p class="feature-desc">思い出カードなどを共有する場合、その操作は利用者ご自身がiOSの共有機能を通じて行うものです。共有先は利用者が選択し、本アプリが自動的にデータを送信することはありません。</p>
@@ -109,7 +134,12 @@
       <!-- Card 2: Collection -->
       <div class="card glass">
         <div class="card-header">
-          <div class="card-icon">🛡️</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6v7z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
           <h2>2. 個人情報の収集・トラッキング</h2>
         </div>
         <div class="card-body">
@@ -120,21 +150,33 @@
           </div>
           <ul class="features-list mt-4">
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>アカウント不要</strong>
                 <p class="feature-desc">アカウント登録やログインなどの面倒な手続きは一切必要ありません。</p>
               </div>
             </li>
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>データ収集なし</strong>
                 <p class="feature-desc">氏名、メールアドレス、位置情報、端末の識別子などの個人データは収集しません。</p>
               </div>
             </li>
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>トラッキングなし</strong>
                 <p class="feature-desc">利用状況を追跡する解析ツール（アナリティクス）や広告トラッキングSDKは一切含まれていません。</p>
@@ -147,7 +189,11 @@
       <!-- Card 3: Children -->
       <div class="card glass">
         <div class="card-header">
-          <div class="card-icon">👶</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+          </div>
           <h2>3. お子さまのプライバシー</h2>
         </div>
         <div class="card-body">
@@ -158,7 +204,12 @@
       <!-- Card 4: Premium -->
       <div class="card glass">
         <div class="card-header">
-          <div class="card-icon">💳</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="5" rx="2"/>
+              <line x1="2" x2="22" y1="10" y2="10"/>
+            </svg>
+          </div>
           <h2>4. アプリ内課金（プレミアム）</h2>
         </div>
         <div class="card-body">
@@ -169,7 +220,12 @@
       <!-- Card 5: Contact -->
       <div class="card glass highlighted-card">
         <div class="card-header">
-          <div class="card-icon">✉️</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
           <h2>お問い合わせ</h2>
         </div>
         <div class="card-body">
@@ -190,7 +246,12 @@
       <!-- Card 1: Photos -->
       <div class="card glass">
         <div class="card-header">
-          <div class="card-icon">📸</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+              <circle cx="12" cy="13" r="3"/>
+            </svg>
+          </div>
           <h2>1. Processing of Photos</h2>
         </div>
         <div class="card-body">
@@ -198,21 +259,33 @@
           
           <ul class="features-list">
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>100% On-Device</strong>
                 <p class="feature-desc">All scanning, indexing, and comparison happen locally on your device (iPhone / iPad).</p>
               </div>
             </li>
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>No Uploads</strong>
                 <p class="feature-desc">Your photos and metadata are never uploaded to any server or shared with third parties, including the developer.</p>
               </div>
             </li>
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>User-Initiated Sharing</strong>
                 <p class="feature-desc">When you choose to share a keepsake card, you do so through the standard iOS share sheet. You select the destination; the App never transmits any data automatically.</p>
@@ -225,7 +298,12 @@
       <!-- Card 2: Collection -->
       <div class="card glass">
         <div class="card-header">
-          <div class="card-icon">🛡️</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6v7z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
           <h2>2. Data Collection & Tracking</h2>
         </div>
         <div class="card-body">
@@ -236,21 +314,33 @@
           </div>
           <ul class="features-list mt-4">
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>No Accounts</strong>
                 <p class="feature-desc">No registration, accounts, or logins are required to use the App.</p>
               </div>
             </li>
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>No Personal Data</strong>
                 <p class="feature-desc">The App does not collect any personal data such as name, email, location, or device identifiers.</p>
               </div>
             </li>
             <li>
-              <div class="feature-bullet">✓</div>
+              <div class="feature-bullet-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
               <div>
                 <strong>No Third-Party SDKs</strong>
                 <p class="feature-desc">The App contains no analytics, ad tracking SDKs, or user behavior tracking tools.</p>
@@ -263,7 +353,11 @@
       <!-- Card 3: Children -->
       <div class="card glass">
         <div class="card-header">
-          <div class="card-icon">👶</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+          </div>
           <h2>3. Children's Privacy</h2>
         </div>
         <div class="card-body">
@@ -274,7 +368,12 @@
       <!-- Card 4: Premium -->
       <div class="card glass">
         <div class="card-header">
-          <div class="card-icon">💳</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="5" rx="2"/>
+              <line x1="2" x2="22" y1="10" y2="10"/>
+            </svg>
+          </div>
           <h2>4. In-App Purchases (Premium)</h2>
         </div>
         <div class="card-body">
@@ -285,7 +384,12 @@
       <!-- Card 5: Contact -->
       <div class="card glass highlighted-card">
         <div class="card-header">
-          <div class="card-icon">✉️</div>
+          <div class="card-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
           <h2>Contact Us</h2>
         </div>
         <div class="card-body">
